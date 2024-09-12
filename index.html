@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAI Portal</title>
+    <link rel="stylesheet" href="duplicate css.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+                background-color:rgb(55, 55, 135);
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 24px;
+            }
+        .navbar {
+            display:flex;
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-list li {
+            margin-right: 20px;
+        }
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+        }
+        .right_nav {
+            background-color: rgb(55, 55, 135);
+            width: 50%;
+            text-align: right;
+            padding:30px;
+}
+              
+       
+        #map {
+            flex: 1;
+            height: calc(100vh - 50px);
+            z-index: 0; /* Ensure map is behind modal */
+        }
+        .info-section {
+            padding: 20px;
+        }
+        .logo img {
+            max-height: 50px; /* Adjust based on logo size */
+        }
+        .banner-area{
+            position:relative;
+        }
+   .banner-area img{
+    width:auto;
+    height:auto;
+    padding:0px;
+    margin-right:0px;
+    align-items: center;
+
+   }
+   .row, .map-img , .state-list {
+    flex: 1;
+    margin: 5px;
+}
+.map-img img {
+    max-width: 100%;
+    height: auto;
+}
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><img src="C:\Users\mahima prakash\Documents\project-test\new image - Copy.png" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#Revenue">Revenue</a></li>
+            <li><a href="RCS.html">RCS</a></li>
+        </ul>
+        <div class="right_nav">
+            <input type="text" name="search" id="search">
+            <button class="1 btn">Search</button>
+        </div>
+    </nav>
+</div>
+
+      <div class="banner-area">
+            <img src="c:\Users\mahima prakash\Downloads\banner logo.jpeg" alt="bannerlogo" >
+            
+            <div class="banner-text">
+                <h1>AIRPORTS AUTHORITY OF INDIA </h1>
+                <p>Rajiv Gandhi Bhawan</p>
+            </div>
+            </div>
+    </div>
+    <div class="map-area">
+        <section class="category-map">
+            <div class="row">
+        <h3>Aviation India / Major Airports</h3>
+        
+        <ul class="state-list">
+            <li>Delhi</li>
+            <li>Mumbai</li>
+            <li>Chennai</li>
+            <li>Bengaluru</li>
+            <li>Kolkata</li>
+            <li>Hyderabad</li>
+        </ul>
+        </div>
+        
+        <div class="map-img"><img alt="Aviation India" src="https://ibefv2.broadwayinfotech.net.au/v3/uploads/industry/Aviation-Major-Airports-India.png"></div>
+        
+        
+        <div class="Contacts">
+        <h3>Industry Contacts</h3>
+        
+        <ul class="tag">
+            <li><a class="anchertag" href="https://www.aai.aero" target="_blank">Airports Authority of India (AAI) </a></li>
+            <li><a class="anchertag" href="https://dgca.gov.in/digigov-portal/" target="_blank">Directorate General of Civil Aviation (DGCA)</a></li>
+        </ul>
+        </div>
+        </section>
+        </div>
+
+        
+</body>
+</html>

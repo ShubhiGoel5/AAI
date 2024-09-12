@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RCS UDAN </title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:white;
+            
+        }
+        .header{
+            color:black;
+            padding-bottom:100;
+
+        }
+        .op{
+            text-align: right;
+            padding-bottom:100%;
+            margin-bottom:  100%;
+        }
+        .right_nav{
+        
+            width: 10%;
+            height:10%;
+            padding-top: 20px;
+            padding-left: 70%;
+        }
+        .div{
+            width:fit-content;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+            background-color: lightgrey;
+            text-align:justify;
+            height: auto;
+        }
+        .top-text {
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .container {
+            padding: 20px;
+        }
+        
+    </style>
+
+            <div class="div">
+                <h1 ><u>REGIONAL CONNECTIVITY SCHEME -UDAN</u></h1></br> 
+                
+                <h2>Connecting India through UDAN</h2>
+        <p> <h3>The UDAN Scheme has successfully connected several small cities and towns to major hubs, improving regional connectivity and providing air travel options to the common citizen. It has led to the operationalization of new airports and increased flight frequencies on regional routes.</h3></p>
+        
+    </p>
+
+    
+
+<div class="top-text">
+
+<h2 > List of Operationalized RCS Routes </h2>
+<h3>  Select the Airline given below and Get the Rcs routes Details  </h3>
+</div>
+<div class="container">
+
+<label for="Airline select"><h3>Select a Airline:</h3></label>
+<select id="worksheetSelect" onchange="showWorksheet()">
+    <option value="">--Select Worksheet--</option>
+    <option value="gid=587228834">Alliance Air</option>
+    <option value="gid=1247103074">Alliance Air (extra space)</option>
+    <option value="gid=1164312225">Aviation Connectivity</option>
+    <option value="gid=839729686">Big Charter</option>
+    <option value="gid=1157941788">Deccan Air</option>
+    <option value="gid=991686013">GSEC Monarch</option>
+    <option value="gid=1364778070">GSEC Monarch (extra space)</option>
+    <option value="gid=2034426686">Ghodawat</option>
+    <option value="gid=1238316846">Ghodawat (extra space)</option>
+    <option value="gid=859796282">Heritage</option>
+    <option value="gid=1970886246">Indigo</option>
+    <option value="gid=1621289755">Jet Airways</option>
+    <option value="gid=1799330433">Just Udo</option>
+    <option value="gid=1550898420">Just Udo (extra space)</option>
+    <option value="gid=385674781">Pawan Hans</option>
+    <option value="gid=732305476">Spicejet</option>
+    <option value="gid=2113510862">Trujet</option>
+    <option value="gid=1439729910">Zoom Air</option>
+    
+
+    
+    
+</select>
+<h2> Annexure II: </h2>
+    <a href="https://docs.google.com/spreadsheets/d/1WSVAdKdrUt4VITFHBivrdU4NuHs22iUp/edit?usp=sharing&ouid=101747885816468909334&rtpof=true&sd=true"> AAI Consessions Report </a>
+
+
+</div>
+
+<iframe id="worksheetFrame" style="width: 100%; height: 600px; border: 1px solid #ccc;" src=""></iframe>
+
+<script>
+    function showWorksheet() {
+        const baseUrl = 'https://docs.google.com/spreadsheets/d/1q5j7XXvBuHGtK1Q0mRhukvt6WcrfKn9p/edit?';
+        const select = document.getElementById('worksheetSelect');
+        const worksheetId = select.value;
+        const worksheetFrame = document.getElementById('worksheetFrame');
+
+        if (worksheetId) {
+            worksheetFrame.src = baseUrl + '#' + worksheetId;
+        } else {
+            worksheetFrame.src = '';
+        }
+    }
+</script>
+</body>
+</html>
